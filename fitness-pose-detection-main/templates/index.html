@@ -1,0 +1,56 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Flask App</title>
+</head>
+<body>
+  <nav>
+    <div id="nav">
+      <a href="">Home</a>
+      <a href="{{ url_for('about') }}">About Us</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('faq') }}">FAQ</a>
+    </div>
+  </nav>
+  <br> <br>
+  <div id="main">
+    <h1>Exercise & Fitness Assistance System</h1> <br> <br>
+    <img src="{{ url_for('static', filename='pose_new.png') }}" alt="" width="50%">
+  </div>
+  <br> <br>
+  <!-- <a href="{{ url_for('gui') }}" target="_blank">Select something!</a> -->
+  <h2>Select some Poses to get started!</h2>
+  <div class="cards">
+      <div id="pose1">
+        <h3><u>Standing Side Pose</u></h3> <br>
+        <img src="{{ url_for('static', filename='pose1.jpg') }}" alt="" width="300px" height="200px"> <br>
+        <button class="index"><a href="{{ url_for('gui') }}">Start</a></button>
+      </div>
+      <div id="pose2">
+        <h3>High Lunge</h3> <br>
+        <img src="{{ url_for('static', filename='pose2.jpg') }}" alt="" width="300px" height="200px"> <br>
+        <button class="index"><a href="">Start</a></button>
+      </div> 
+      <div id="pose3">
+        <h3>Warrior</h3> <br>
+        <img src="{{ url_for('static', filename='pose3.jpg') }}" alt="" width="300px" height="200px"> <br>
+        <button class="index"><a href="">Start</a></button>
+      </div>
+      <div id="pose4"></div>
+      <div id="pose5"></div>
+  </div>
+
+
+</body>
+</html>
+
+<!-- 
+standing side pose
+high lunge
+warrior -->
